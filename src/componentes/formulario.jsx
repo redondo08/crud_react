@@ -13,7 +13,7 @@ const agregarUsuario = (e)=>{
         apelido:Apellido
     }
 
-    var buscar = Estado.find( usr => usr.nombre === Nombre)
+    var buscar = Estado.find( usr => usr.nombre === Nombre && usr.apelido === Apellido)
 
     console.log(buscar) 
 
