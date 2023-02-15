@@ -2,10 +2,7 @@ import { useState } from "react";
 
 
 const Tabla = (props)=>{
-    let users = props.user
-    console.log(users);
-    
-    
+    let users = props.user  
    
     const imprimir = 
        users.map(x =>{
@@ -23,7 +20,7 @@ const Tabla = (props)=>{
     
 
    return (
-<table class="table">
+<table className="table table-striped">
   <thead>
     <tr>
       <th scope="col"></th>
