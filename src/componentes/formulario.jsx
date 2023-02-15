@@ -13,7 +13,21 @@ const agregarUsuario = (e)=>{
         apelido:Apellido
     }
 
-    setEstado([...Estado,usuario]);
+    var buscar = Estado.find( usr => usr.nombre === Nombre)
+
+    console.log(buscar) 
+
+if(buscar == undefined){
+  setEstado([...Estado,usuario]);
+}
+else{
+  Swal.fire(
+    'Error',
+    'No puedes tener mas de 1 registro igual',
+    'error'
+  )
+}
+    
    
 }
 
